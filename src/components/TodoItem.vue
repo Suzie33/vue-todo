@@ -3,7 +3,7 @@
     <span :class="{done: todo.completed}">
       <input
        type="checkbox"
-       v-on:change="todo.completed = !todo.completed">
+       v-model="todo.completed">
       <strong>{{ index + 1 }}.</strong>
       {{ todo.title | uppercase }}
     </span>
